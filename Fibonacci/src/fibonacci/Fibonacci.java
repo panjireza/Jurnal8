@@ -25,13 +25,14 @@ public class Fibonacci {
          
         fib[0] = 1;
         fib[1] = 1;
-         int jumlah =0;
+         
         for(int i = 2; i < n; i++) {
             fib[i] = fib[i-1] + fib[i-2];
-            jumlah+=fib[i];
         }
-          System.out.println(jumlah);
-  
+         
+       for (int i = n; i > 0; i--) {
+            System.out.print(fib[i-1] +  " ");
+       }
     }
     
 }
